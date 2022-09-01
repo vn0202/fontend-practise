@@ -443,6 +443,59 @@
 
   </div>
 </div>
+  <div class="modal-over">
+    <div class="modal-menu">
+      <div class="modal-menu-header">
+      <span class="modal-icon-close">
+      <i class="fas fa-times"></i>
+        <img src="images/icons/logo.png" alt="" class="modal-icon-logo">
+      </span>
+      </div>
+      <div class="modal-menu-body">
+        <ul class="modal-lists">
+          <li class="modal-menu-item active">
+            <a href="" class="modal-menu-item-link">Mua nha</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="modal-menu-item-link">Thue nha</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="modal-menu-item-link">Kham pha</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="modal-menu-item-link">Blog</a>
+          </li>
+        </ul>
+        <div class="modal-action">
+          <a href="" class="modal-action-item-post">
+            Dang bai
+          </a>
+        </div>
+        <div class="modal-action-account">
+          <a href="" class="modal-action-item-login">
+            Dang nhap
+          </a>
+          <a href="" class="modal-action-item-reg">
+            Dang ky
+          </a>
 
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  document.querySelector(".header-nav-menu-icon").onclick= function()
+  {
+
+      document.querySelector('.modal-over').classList.add('active')
+  }
+  document.querySelector(".modal-icon-close").onclick= function()
+  {
+
+      document.querySelector('.modal-over').classList.remove('active')
+  }
+</script>
 </body>
 </html>

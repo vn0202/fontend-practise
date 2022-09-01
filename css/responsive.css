@@ -202,6 +202,12 @@
         flex:0 0 50%;
 
     }
+    .see-more{
+        padding: 15px 45px;
+        font-size: 1rem;
+        line-height: 19px;
+        margin-top: 40px;
+    }
 
 }
 @media (min-width: 769px ) and (max-width: 1027px)
