@@ -1,7 +1,5 @@
 @media( min-width: 376px){
-#header{
-    padding-top: 0px;
-}
+
     .list-cats-item{
         flex:0 0 20%;
     }
@@ -137,7 +135,7 @@
 
     .list-video_sub .video-item{
         flex:0 0 30%;
-        margin-right: 0px;
+        /*margin-right: 0px;*/
     }
 }
 @media (min-width: 769px)
@@ -202,6 +200,7 @@
     .list-video_sub .video-item{
         flex:0 0 50%;
 
+
     }
     .see-more{
         padding: 15px 45px;
@@ -236,7 +235,7 @@
         padding:0 232px;
     }
     #header{
-        padding: 0 44px;
+        padding: 30px 44px;
     }
     .header-nav-menu-icon{
         display: none;

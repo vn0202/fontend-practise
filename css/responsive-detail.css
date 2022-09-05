@@ -1,7 +1,5 @@
 @media( min-width: 376px) {
-    #header {
-        padding-top: 0px;
-    }
+
     .lable-cat{
         display: inline-block;
     }
@@ -145,9 +143,8 @@
         margin-top: 200px;
         padding: 0 232px;
     }
-
-    #header {
-        padding: 0 44px;
+    #header{
+        padding: 30px 44px;
     }
 
     .header-nav-menu-icon {
