@@ -1,6 +1,5 @@
 # Bài 1: Cắt giao diện PSD Blog  Review Nhà 
 
---- 
 
 Đề bài yêu cầu cắt lại giao diện blog của trang Review nhà với figma Thực hiện bởi: Vũ Văn Nghĩa   
   
@@ -11,15 +10,13 @@ Cách sử dụng kết quả:
 
 ## Responsive trên màn hình:  
 
---- 
   
 - 1027px 
 - 768px 
 - 375px 
 
 ## Được viết bằng   
- 
---- 
+
 
 - Html 
 - Css 
