@@ -137,6 +137,7 @@
 
     .list-video_sub .video-item{
         flex:0 0 30%;
+        margin-right: 0px;
     }
 }
 @media (min-width: 769px)
@@ -231,7 +232,7 @@
 {
 
     #main{
-        margin-top: 200px;
+        margin-top: 150px;
         padding:0 232px;
     }
     #header{
@@ -246,6 +247,7 @@
     }
     .header-nav-main{
         display: flex;
+        justify-content: space-between;
     }
 
     .logo{
