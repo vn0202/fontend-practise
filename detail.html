@@ -48,16 +48,16 @@
     </div>
 
     <div class="header-user ">
-      <div class=" header-user-icon has-active">
+      <div class=" header-user-icon-notify has-active">
         <img src="images/icons/notify.png" alt="" class="header-notify-icon">
       </div>
-      <div class="header-user-icon">
+      <div class="header-user-icon-fav has-active">
         <img src="images/icons/heart-black.png" alt="" class="header-fav-icon">
 
       </div>
       <div class="header-post">
         <a href="" class="header-post-link">
-          Dang bai
+          Đăng bài
         </a>
       </div>
       <div class="header-user-infor">
@@ -562,6 +562,22 @@
     {
 
         document.querySelector('.modal-over').classList.remove('active')
+    }
+    let listNavItems=   document.getElementsByClassName("header-nav-main-item-link");
+    for(var i= 0; i< listNavItems.length; i++)
+    {
+        if(!listNavItems[i].classList.contains('active'))
+            listNavItems[i].onmouseover = function()
+            {
+                this.classList.add('active');
+
+            }
+        listNavItems[i].onmouseout = function()
+        {
+            this.classList.remove('active');
+
+        }
+
     }
 </script>
 

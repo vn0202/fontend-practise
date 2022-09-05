@@ -49,6 +49,19 @@ body{
 }
 .header-nav-main-item-link.active{
     border-bottom: 2px solid red;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.header-user-icon-notify,
+.header-user-icon-fav
+{
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 26px;
+
 }
 .logo{
     flex: 1;
@@ -71,6 +84,7 @@ body{
     letter-spacing: 0.0015rem;
     margin-right: 10px;
     display: none;
+    font-weight: 600;
 }
 .header-notify-icon,
 .header-fav-icon{
@@ -125,8 +139,9 @@ body{
 
 }
 .has-active::after{
-    content:"";
+    content: "";
     display: block;
+    border: 1px solid white;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -134,7 +149,7 @@ body{
     position: absolute;
     right: 0;
     bottom: 0;
-    transform: translateX(50%);
+    transform: translate(38%,-10%);
 }
 /*main*/
 #main{
@@ -186,6 +201,8 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+
+    margin-top: 13px;
 }
 .new-item-cat{
     color:#007882;
@@ -203,8 +220,8 @@ body{
 .new-item-author::after{
     content:"";
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     border-radius: 100%;
     background: #3B4144;
     margin-left: 10px;
@@ -214,8 +231,8 @@ body{
 .new-item-author::before{
     content:"";
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     border-radius: 100%;
     background: #3B4144;
     margin-right: 10px;
@@ -251,7 +268,7 @@ body{
 }
 .social-link-mail{
     display: inline-block;
-    padding: 4px 24px;
+    padding: 6px 24px;
     border-radius: 30px;
     background: #CCCCCC;
     text-align: center;
@@ -262,7 +279,7 @@ body{
 }
 .social-link-face{
     display: inline-block;
-    padding: 4px 24px;
+    padding: 6px 24px;
     border-radius: 30px;
     background: #395185;
     text-align: center;
@@ -272,7 +289,7 @@ body{
 }
 .social-link-save{
     display: inline-block;
-    padding: 4px 24px;
+    padding: 6px 24px;
     border-radius: 30px;
     border:1px solid #3B4144;
     text-align: center;
@@ -292,11 +309,10 @@ body{
 }
 .new-body-img{
     max-width: 100%;
-
+height:261px;
     object-fit: cover;
     border-radius: 16px;
     margin-bottom: 42px;
-    margin-top: 16px;
 }
 
 .new-body-main-content p{
@@ -417,6 +433,10 @@ body{
     font-weight: 600;
     line-height: 21px;
     color: #3B4144;
+}
+.posts-infor{
+    margin-bottom: 8px;
+    margin-top:4px;
 }
 .posts-item-img{
     width: 50%;

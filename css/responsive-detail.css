@@ -34,6 +34,9 @@
         width: 40%;
         flex-direction: column;
     }
+    .new-body-img{
+        height:unset;
+    }
     .new-body-sub-standard li {
         font-size: 1rem;
         line-height: 28px;
@@ -122,6 +125,9 @@
     .social-link-label{
         display: inline-block;
     }
+    .new-some-infor{
+        margin-bottom: 43px;
+    }
 }
 @media (min-width: 769px ) and (max-width: 1027px)
 {
@@ -136,6 +142,7 @@
         height: 24px;
         width: 140px;
     }
+
 }
 @media (min-width: 1028px) {
 
@@ -169,13 +176,12 @@
     .header-user {
         flex: 0 0 30%;
     }
+    .header-user-icon-notify{
+        display: none;
+    }
 
     .header-post-link {
         display: inline-block;
-    }
-
-    .header-fav-icon {
-        display: none;
     }
 
     .header-user-icon {
