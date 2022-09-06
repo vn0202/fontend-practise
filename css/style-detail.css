@@ -12,18 +12,18 @@ body{
 }
 #container{
     padding: 0 22px;
+    padding-bottom: 90px;
 }
 #header{
     position: fixed;
     z-index: 10;
-    padding: 16px 22px ;
+    padding: 16px 44px ;
     right: 0;
     left: 0;
     top: 0;
     display: flex;
     /*height: 85px;*/
     align-items: center;
-    box-shadow: 0 0 5px #ccc;
 
     background-color: white;
 }
@@ -51,6 +51,7 @@ body{
     border-bottom: 2px solid red;
     display: inline-block;
     padding-bottom: 8px;
+    color:black;
 }
 .header-user-icon-notify,
 .header-user-icon-fav
@@ -153,8 +154,9 @@ body{
 }
 /*main*/
 #main{
-    margin-top: 150px;
+    margin-top: 100px;
 }
+
 .new-header{
     display: flex;
     justify-content: space-between;
@@ -163,6 +165,9 @@ body{
 .backward{
     text-decoration: none;
     color:red;
+}
+.backward i{
+    color:#3B4144;
 }
 .backward-text{
     margin-left: 10px;
@@ -306,6 +311,7 @@ body{
     color: white;
     font-size: 0.875rem;
     font-weight: 600;
+    margin-left: 12px;
 }
 .new-body-img{
     max-width: 100%;
@@ -321,6 +327,7 @@ height:261px;
     line-height: 28px;
     color:#3B4144;
     letter-spacing: 0.001em;
+    margin-bottom: 24px;
 }
 .new-body-sub-imgs_main{
     /*height: 360px;*/
@@ -373,6 +380,10 @@ height:261px;
     font-weight: 400;
     color:#3B4144;
     line-height: 21px;
+    letter-spacing: 0.005em;
+}
+.new-body-sub-standard li b{
+    margin-right: 10px;
 }
 .keywords{
     list-style: none;
@@ -392,8 +403,8 @@ height:261px;
 /*posts*/
 .posts-label{
     font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 27px;
     color:#3B4144;
     margin-bottom: 36px;
     margin-top: 42px;
@@ -403,12 +414,12 @@ height:261px;
 }
 .post-label-cat{
     display: inline-block;
-    padding: 4px 24px;
+    padding: 0px 24px;
     border-radius: 36px;
     background: #007882;
     color: white;
     font-size: 14px;
-    margin-left: 16px;
+    margin-left: 4px;
 }
 .post-label-see-all{
     display: none;

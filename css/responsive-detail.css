@@ -1,5 +1,7 @@
 @media( min-width: 376px) {
-
+#main{
+    margin-top: 150px;
+}
     .lable-cat{
         display: inline-block;
     }
@@ -9,6 +11,9 @@
     }
     .new-author{
         flex-basis: 50%;
+    }
+    .new-some-infor{
+        margin-bottom: 43px;
     }
     .new-title{
         font-size: 2rem;
@@ -122,11 +127,30 @@
 }
 @media (min-width: 769px)
 {
+    #container {
+        padding: 0 44px;
+}
     .social-link-label{
         display: inline-block;
     }
     .new-some-infor{
         margin-bottom: 43px;
+    }
+    .post-label-cat{
+        padding: 0px 36px;
+    }
+    .new-body-main-content p{
+        margin-bottom: 36px;
+    }
+    .new-body-sub-imgs{
+        margin-bottom: 36px;
+    }
+    .new-item-author::before,
+    .new-item-author::after{
+        transform: translateY(-100%);
+    }
+    .posts-item{
+        margin-bottom: 36px;
     }
 }
 @media (min-width: 769px ) and (max-width: 1027px)
@@ -147,8 +171,8 @@
 @media (min-width: 1028px) {
 
     #main {
-        margin-top: 200px;
-        padding: 0 232px;
+        margin-top: 150px;
+        padding: 0 270px;
     }
     #header{
         padding: 30px 44px;
@@ -177,7 +201,7 @@
         flex: 0 0 30%;
     }
     .header-user-icon-notify{
-        display: none;
+        /*display: none;*/
     }
 
     .header-post-link {

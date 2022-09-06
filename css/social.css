@@ -60,6 +60,7 @@ a {
     border-bottom: 2px solid red;
     display: inline-block;
     padding-bottom: 8px;
+    color:black;
 }
 
 .logo {
@@ -207,7 +208,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin: 36px 0px;
+    margin: 42px 0px;
     overflow: hidden;
 
 }

@@ -22,7 +22,7 @@ a {
 #header {
     position: fixed;
     z-index: 10;
-    padding: 16px 22px ;
+    padding: 35px  22px 16px  ;
     right: 0;
     left: 0;
     top: 0;
@@ -60,6 +60,7 @@ a {
     border-bottom: 2px solid red;
     display: inline-block;
     padding-bottom: 8px;
+    color:black;
 }
 
 .logo {
@@ -152,7 +153,7 @@ a {
 .has-active::after {
     content: "";
     display: block;
-    border: 1px solid white;
+    border: 1.5px solid white;
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -162,6 +163,7 @@ a {
     bottom: 0;
     transform: translate(38%,-10%);
 }
+
 
 /*Main*/
 #main {
@@ -258,7 +260,7 @@ a {
 
 .list-new-item-img {
     width: 100%;
-    padding-top: 70%;
+    padding-top: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -393,6 +395,7 @@ a {
 .video-poster {
     position: relative;
 }
+
 .video-icon_pause{
     height: 20px;
     transform: translateX(10%);
@@ -412,7 +415,7 @@ a {
     position: absolute;
     bottom: 50%;
     left: 45%;
-    transform: translate(0, 50%);
+    transform: translate(-10%, 50%);
     line-height: 48px;
 }
 .video-main .video-icon-container-pause{
@@ -462,11 +465,12 @@ a {
 .number-view::after {
     content: "";
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     border-radius: 100%;
-    background: #3B4144;
+    background: black;
     margin: 0 8px;
+    transform: translateY(-100%);
 }
 
 .cre_at {
@@ -474,7 +478,7 @@ a {
     color: #3B4144;
     opacity: 0.5;
     font-size: 0.6875rem;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 .list-video_sub {
@@ -483,20 +487,23 @@ a {
     overflow: scroll;
 
 }
+.
 .video-number-view{
     margin-top: 4px;
     margin-bottom: 16px;
 }
 .list-video_sub .video-item {
     flex: 0 0 60%;
-    margin-right: 20px;
+    margin-right: 10px;
 
 }
-
+.video-item{
+    position: relative;
+}
 /*posts*/
 .posts-label {
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 18px;
     line-height: 21px;
     color: #3B4144;
     margin-bottom: 16px;
@@ -610,6 +617,12 @@ a {
 
 .modal-icon-close {
     font-size: 30px;
+}
+.modal-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .modal-menu-body {
