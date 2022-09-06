@@ -175,7 +175,7 @@
 
     #main {
         margin-top: 150px;
-        padding: 0 250px;
+        padding: 0 200px;
     }
     #header{
         padding: 30px 44px;
@@ -223,5 +223,11 @@
     .logo-img {
         height: 24px;
         width: 140px;
+    }
+}
+@media (min-width: 1400px)
+{
+    #main{
+        padding: 0 250px;
     }
 }
