@@ -1,4 +1,4 @@
-@media ( min-width: 376px) {
+@media ( min-width: 450px) {
     #header{
         padding-top: 16px;
     }
@@ -11,9 +11,7 @@
         font-size: 18px;
     }
 
-    .list-cats-item {
-        flex: 0 0 20%;
-    }
+
 
     .news-label {
         margin: 45px 0 33px;
@@ -155,7 +153,7 @@
     }
 }
 
-@media (min-width: 376px ) and (max-width: 768px) {
+@media (min-width: 450px ) and (max-width: 768px) {
     .header-user-icon {
         margin-right: 28px;
     }
@@ -214,6 +212,9 @@
 }
 
 @media (min-width: 769px) {
+    .list-cats-item {
+        flex: 0 0 20%;
+    }
     .list-new {
         display: flex;
         justify-content: space-between;

@@ -1,4 +1,4 @@
-@media( min-width: 376px) {
+@media( min-width: 450px) {
 #main{
     margin-top: 150px;
 }
@@ -6,11 +6,11 @@
         display: inline-block;
     }
     .socials{
-        flex-basis: 50%;
+        flex-basis: 60%;
         margin: 0;
     }
     .new-author{
-        flex-basis: 50%;
+        flex-basis: 40%;
     }
     .new-some-infor{
         margin-bottom: 43px;
@@ -110,7 +110,7 @@
         display: none;
     }
 }
-@media (min-width: 376px ) and (max-width: 768px) {
+@media (min-width: 450px ) and (max-width: 768px) {
     .header-user-icon {
         margin-right: 28px;
     }
@@ -166,13 +166,16 @@
         height: 24px;
         width: 140px;
     }
+    .social-link-mail{
+        padding: 6px 20px;
+    }
 
 }
 @media (min-width: 1028px) {
 
     #main {
         margin-top: 150px;
-        padding: 0 270px;
+        padding: 0 250px;
     }
     #header{
         padding: 30px 44px;
