@@ -15,8 +15,8 @@ module.exports = {
         'sans': ['Montserrat', 'Helvetica', 'Arial', 'sans-serif']
       },
       borderRadius: {
-        '-7.5': "0.53333rem",
-        '4xl':'2.25rem'
+        '4xl':'1.875rem ',
+        '5xl':'2.25rem'
       },
       colors: {
 
@@ -24,6 +24,7 @@ module.exports = {
         'pri-col':'#3B4144',
 
       },
+
 
       width:{
         '84.75':'21.1875rem',
@@ -42,7 +43,12 @@ module.exports = {
           'display':'-webkit-box',
 
         }
-      }
+      },
+
+      inset:{
+        '1/20':'5%',
+        '1/10':'10%'
+      },
     },
   },
   plugins: [
