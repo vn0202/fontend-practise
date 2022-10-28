@@ -1,0 +1,337 @@
+@use "sass:selector";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+@layer{
+  @font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrt'), url(./fonts/Montserrat/static/Montserrat-Regular.ttf) format("ttf");
+
+  }
+
+}
+@layer base {
+  body {
+    @apply font-sans
+  }
+}
+@layer components {
+  #header {
+    @apply fixed flex flex-row justify-between z-10 right-0 left-0 top-0 pt-9 pb-4 px-5 bg-white/70 items-center;
+  }
+
+  .md-hidden {
+    @apply md:hidden;
+  }
+
+  .main-menu {
+    @apply hidden lg:pt-4 lg:flex lg:flex-row lg:justify-between;
+    & li {
+      @apply border-b-2 border-transparent target:border-red-600 hover:border-red-600;
+    {
+      a {
+        @apply no-underline font-semibold text-sm text-black/50 leading-tight;
+      }
+    }
+    }
+
+
+  }
+
+  .button {
+    @apply no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold  bg-transparent text-pri-col hover:text-white hover:bg-pri-col-but;
+    &__active {
+      @apply bg-pri-col-but text-white;
+    }
+  }
+
+  .notify-active {
+    @apply inline-block  border border-2 border-solid border-white w-2.5 h-2.5 rounded-full bg-red-700 absolute right-0 bottom-0 translate-x-1/3 translate-y-1/4;
+  }
+
+  #slider {
+    @apply bg-no-repeat bg-center  bg-cover h-24 sm:h-48   rounded-2xl relative md:h-64  lg:w-full lg:h-80  xl:h-96 xl:rounded-3xl;
+  }
+
+  .menu-cat {
+    @apply no-underline flex  flex-nowrap justify-between mt-5 xl:mt-8  overflow-hidden overflow-x-scroll sm:overflow-x-hidden;
+    li {
+      @apply inline-block basis-1/3 shrink-0 sm:basis-1/5;
+    }
+  }
+
+  .cat-author-date {
+    @apply mt-2 mb-1 xs:text-sm md:text-lg;
+    > a {
+      @apply text-teal-500  font-semibold text-sm leading-5 xs:text-base;
+    }
+
+    span:nth-of-type(1) {
+      @apply inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400 -translate-y-full;
+    }
+
+    span:nth-of-type(2) {
+      @apply font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base;
+    }
+
+    span:nth-of-type(3) {
+      @apply inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400 -translate-y-full;
+    }
+
+    span:last-child {
+      @apply font-normal text-xs leading-4 text-pri-col opacity-50;
+    }
+  }
+
+  .news .body-news {
+
+    @apply md:flex md:justify-between;
+    > div:first-child {
+      @apply md:w-3/5;
+    }
+
+    > div:last-child {
+      @apply xs:flex  justify-between md:flex  md:flex-col md:w-2/5 md:pl-5 md:justify-start md:flex-wrap;
+      .news-item-desc {
+        @apply md:hidden;
+      }
+    }
+
+    .news-item-poster {
+      @apply w-full  bg-cover bg-center bg-no-repeat rounded-2xl relative;
+
+    }
+
+    .news-item-title {
+      @apply text-sm font-semibold text-pri-col leading-5 line-clamp-2 md:text-lg;
+
+    }
+
+    .news-item-desc {
+      @apply font-normal text-sm text-pri-col leading-5 opacity-50 line-clamp-3 mb-6;
+
+    }
+
+  }
+
+  .news-cat {
+    @apply flex justify-center items-center mt-5 mb-4 xs:mt-11 xs:mb-8;
+    span {
+      @apply font-bold text-lg text-pri-col leading-7 xs:text-3xl leading-4xl;
+    }
+  }
+
+
+  .sub-nav{
+    @apply flex justify-between mb-6;
+    > p {
+      @apply font-semibold  leading-5 text-pri-col;
+    }
+
+    > span:nth-of-type(1) {
+      @apply font-medium text-pri-col xs:hidden;
+    }
+
+    > span:nth-of-type(2) {
+      @apply hidden xs:text-base text-pri-col leading-5 font-normal xs:block;
+    }
+  }
+  .videos {
+
+
+    .videos-body {
+      @apply xs:flex xs:flex-col md:flex-row md:justify-between md:h-96;
+      > div:first-child {
+        @apply mt-2 mb-4 md:w-8/12 md:mt-0 md:pr-5;
+      }
+
+      .outstanding-video {
+        > div:last-child {
+          @apply xs:absolute xs:bottom-1/10 xs:left-1/20 xs:text-white;
+          p {
+            @apply text-sm leading-5 font-semibold text-pri-col line-clamp-2 xs:text-white xs:text-lg;
+          }
+        }
+
+        .viewers {
+          span:first-child {
+            @apply font-normal text-xs text-pri-col  xs:text-white xs:text-base ;
+          }
+
+          span:nth-of-type(2) {
+            @apply inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4 xs:bg-white;
+          }
+
+          span:last-child {
+            @apply font-normal text-pri-col opacity-50 text-xs leading-5 xs:text-white xs:opacity-50 xs:text-base;
+          }
+        }
+
+      }
+
+      .other-videos {
+        @apply flex  justify-between overflow-hidden overflow-scroll md:flex-col md:w-4/12;
+        .other-video-item {
+          @apply mr-2.5 basis-1/2 shrink-0  xs:basis-1/3 md:basis-1/2;
+          &-desc {
+            @apply text-sm leading-5 font-semibold text-pri-col line-clamp-2;
+
+          }
+        }
+
+      }
+
+      .background-control {
+        @apply text-center   rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70;
+      }
+
+      .viewers {
+        span:first-child {
+          @apply font-normal text-xs text-pri-col ;
+        }
+
+        span:nth-of-type(2) {
+          @apply inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4;
+        }
+
+        span:last-child {
+          @apply font-normal text-pri-col opacity-50 text-xs leading-5;
+        }
+      }
+    }
+
+
+  }
+
+  .list-news {
+    > p:nth-of-type(1) {
+      @apply font-semibold text-lg leading-5 text-pri-col mb-4 md:mb-9 md:mt-14;
+    }
+
+    .list-news-item {
+      @apply mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center;
+      > div:nth-of-type(1) {
+        @apply hidden xs:block xs:relative xs:w-2/5;
+      }
+
+      &--visible-xs {
+        @apply hidden xs:block;
+        p {
+          @apply w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4;
+        }
+      }
+
+      &--visible-mobie {
+        @apply flex justify-between items-center xs:hidden;
+        > p {
+          @apply w-1/2 pl-5 text-sm leading-5 text-pri-col opacity-50 xs:w-full;
+        }
+      }
+
+
+      &-title {
+        @apply text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2;
+      }
+
+      &-desc {
+        @apply w-1/2 pl-4 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4;
+      }
+
+
+    }
+  }
+
+  .see-more {
+    @apply mr-5 py-2 px-6 inline-block rounded-4xl border border-solid border-slate-500     text-sm font-semibold text-pri-col;
+  }
+
+  .modal-over {
+  }
+
+  /*style detail page*/
+  #detail {
+    .detail-nav {
+      .new-catogery {
+        > span {
+          @apply hidden font-normal text-lg leading-5 text-pri-col mr-4 xs:inline-block;
+        }
+
+        > a {
+          @apply text-sky-500     font-semibold text-sm leading-5;
+        }
+
+      }
+    }
+
+    .post-title {
+      @apply font-semibold text-lg leading-7 text-pri-col tracking-wide xs:text-3xl xs:leading-10;
+    }
+
+    .post-infor {
+      @apply flex justify-between flex-wrap items-center mt-3 xs:mb-11;
+      .social-contact {
+        @apply basis-full flex justify-between items-center basis-full mt-3 mb-5 md:basis-3/5 md:mt-0 md:mb-0;
+        a {
+          @apply inline-block px-6 py-1.5 rounded-3xl  text-center w-1/3 mr-5;
+          img {
+            @apply inline-block w-5 h-5 object-contain  align-middle;
+          }
+
+          span {
+            @apply hidden  text-sm font-semibold ml-3 md:inline-block;
+          }
+        }
+      }
+    }
+
+    .post-content {
+      > img {
+        @apply max-w-full h-64 object-cover rounded-2xl mb-10 xs:h-auto;
+      }
+
+      > div:nth-of-type(1) {
+        p {
+          @apply text-base font-normal leading-7 text-pri-col tracking-wide mb-6 md:mb-9;
+        }
+
+      }
+      > div:nth-of-type(2){
+        @apply flex flex-wrap xs:justify-between md:mb-6;
+      }
+      > div:nth-of-type(3){
+        > p{
+         @apply  font-normal text-base leading-7 text-pri-col tracking-wide mb-4
+        }
+        > ul:nth-of-type(1){
+          li{
+            @apply mb-4 text-sm font-normal text-pri-col leading-5 tracking-wide xs:text-base xs:leading-7;
+          }
+        }
+        > ul:nth-of-type(2){
+          li{
+            @apply px-4 py-1 rounded-3xl bg-slate-300 text-xs text-pri-col text-center mr-4 font-normal leading-4 xs:text-base leading-5 px-6;
+          }
+        }
+      }
+
+
+    }
+
+  }
+  /*style social*/
+  #social{
+    > div:first-child{
+      @apply bg-no-repeat bg-center bg-cover w-full h-24 rounded-2xl relative xs:h-48 md:h-64 xl:h-96;
+      div{
+        @apply hidden absolute bottom-1/2  left-24 translate-y-1/2 xl:block;
+      }
+    }
+  }
+
+}
+@layer utilities {
+
+}

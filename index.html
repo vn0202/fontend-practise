@@ -11,31 +11,31 @@
         integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-  <link href="dist/output.css" rel="stylesheet">
+  <link href="dist/output2.css" rel="stylesheet">
 
 </head>
-<body class=" font-sans " >
-<div id="" class="fixed flex flex-row justify-between z-10 right-0 left-0 top-0 pt-9 pb-4 px-5 bg-white/70 items-center">
+<body >
+<div id="header">
   <div class=" lg:basis-1/3">
-    <img src="images/icons/menu.png" alt="" class=" header-nav-menu-icon h-6 w-6 lg:hidden " >
-    <ul class="hidden lg:pt-4 lg:flex lg:flex-row lg:justify-between ">
-      <li id="index.html" class="    border-b-2 border-transparent target: hover:border-red-600 " >
-        <a href="?#index.html" class="no-underline font-semibold text-sm text-black/50 leading-tight ">
+    <img src="images/icons/menu.png" alt="" class="header-nav-menu-icon  h-6 w-6 lg:hidden " >
+    <ul class=" main-menu ">
+      <li id="index.html" >
+        <a href="?#index.html" >
           Mua nhà
         </a>
       </li>
-      <li id="thuenha" class=" border-b-2 border-transparent target:border-red-600 hover:border-red-600">
-        <a href="?#thuenha" class=" no-underline font-semibold text-sm text-black/50 leading-tight">
+      <li id="thuenha" >
+        <a href="?#thuenha" >
           Thuê nhà
         </a>
       </li>
-      <li id="discover" class=" border-b-2 border-transparent target:border-red-600 hover:border-red-600">
-        <a href="?#discover" class=" no-underline font-semibold text-sm text-black/50 leading-tight">
+      <li id="discover" >
+        <a href="?#discover" >
           Khám phá
         </a>
       </li>
-      <li  id = "blog" class="  border-b-2 border-transparent target:border-red-600 hover:border-red-600">
-        <a href="?#blog" class=" no-underline font-semibold text-sm text-black/50 leading-tight">
+      <li  id = "blog" >
+        <a href="?#blog" >
           Blog
         </a>
       </li>
@@ -46,15 +46,17 @@
   </div>
 
   <div class=" basis-1/3 flex flex-1 flex-row items-end justify-end ">
-    <div class="lg:hidden relative right-0 left-0 top-0 bottom-0 mr-6 after:block after:border after:border-1.5 after:border-solid after:border-white after:w-2.5 after:h-2.5 after:rounded-full after:bg-red-700 absolute right-0 bottom-0 after:translate-x-full after:-translate-y-1/2  ">
+    <div class="lg:hidden relative right-0 left-0 top-0 bottom-0 mr-6 ">
+      <span class="notify-active"></span>
       <img src="images/icons/notify.png" alt="" class=" h-5 w-5">
     </div>
-    <div class=" has-active relative right-0 left-0 top-0 bottom-0 mr-6 after:block after:border after:border-1.5 after:border-solid after:border-white after:w-2.5 after:h-2.5 after:rounded-full after:bg-red-700 absolute right-0 bottom-0 after:translate-x-full after:-translate-y-1/2">
+    <div class=" relative right-0 left-0 top-0 bottom-0 mr-6 ">
+      <span class="notify-active "></span>
       <img src="images/icons/heart-black.png" alt="" class=" h-5 w-5">
 
     </div>
     <div>
-      <a href="" class=" no-underline py-1.5 px-6 rounded-3xl text-sm text-white bg-red-700 font-semibold leading-tight mr-2.5 hidden lg:inline-block  ">
+      <a href="" class=" hidden button  mr-2  bg-red-700 text-white lg:inline-block   ">
         Đăng bài
       </a>
     </div>
@@ -71,57 +73,55 @@
 
 <div id="container" class="mt-32  mx-auto lg:mt-40 px-5">
   <div id="main" class=" w-ful lg:px-48">
-    <div class=" bg-no-repeat bg-center  bg-cover h-24 sm:h-48   rounded-2xl relative md:h-64  lg:w-full lg:h-80  xl:h-96 xl:rounded-3xl" style="background-image: url('images/slider/img.png') ">
+    <div id="slider"  style="background-image: url('images/slider/img.png') ">
       <div class=" hidden absolute bottom-1/2 left-24 translate-y-1/2 xl:block">
         <img src="images/icons/review.png" alt="" class=" w-84.75 h-12 mb-4">
-
         <img src="images/icons/subre.png" alt="" class=" w-80 h-7">
       </div>
     </div>
     <div class="xl:px-20">
 
-      <ul class=" no-underline flex  flex-nowrap justify-between mt-5 xl:mt-8  overflow-hidden overflow-x-scroll sm:overflow-x-hidden ">
+      <ul class=" menu-cat ">
         <li class=" inline-block basis-1/3 shrink-0 sm:basis-1/5  ">
-          <a href="" class=" no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold  text-white bg-pri-col-but  ">Tất cả</a>
+          <a href="" class="button button__active">Tất cả</a>
         </li>
-        <li class=" inline-block basis-1/3 shrink-0 sm:basis-1/5">
-          <a href="" class=" no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold  bg-transparent text-pri-col hover:text-white hover:bg-pri-col-but ">Xã hội</a>
+        <li >
+          <a href="" class=" button ">Xã hội</a>
         </li>
-        <li class=" inline-block basis-1/3 shrink-0 sm:basis-1/5">
-          <a href="" class=" no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold bg-transparent text-pri-col hover:text-white hover:bg-pri-col-but  ">Nhà đất </a>
+        <li >
+          <a href="" class=" button ">Nhà đất </a>
         </li>
-        <li class=" inline-block basis-1/3 shrink-0 sm:basis-1/5">
-          <a href="" class=" no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold  bg-transparent text-pri-col hover:text-white hover:bg-pri-col-but">Đời sống </a>
+        <li >
+          <a href="" class=" button">Đời sống </a>
         </li>
-        <li class=" inline-block basis-1/3 shrink-0 sm:basis-1/5">
-          <a href="" class=" no-underline inline-block px-6 py-1.5 text-sm rounded-4xl font-semibold  bg-transparent text-pri-col hover:text-white hover:bg-pri-col-but"> Video </a>
+        <li >
+          <a href="" class=" button"> Video </a>
         </li>
       </ul>
-      <div>
-        <div class=" flex justify-center items-center mt-5 mb-4 xs:mt-11 xs:mb-8">
+      <div class="news">
+        <div class="news-cat">
           <img src="images/icons/list.png" alt="" class=" w-5 mr-2.5 xs:w-8 xs:mr-8">
-          <span class=" font-bold text-lg text-pri-col leading-7 xs:text-3xl leading-4xl">Tin tức</span>
+          <span >Tin tức</span>
         </div>
-        <div class=" md:flex md:justify-between">
-          <div class=" md:w-3/5  ">
-            <div>
+        <div class=" body-news ">
+          <div >
               <a href="detail.html">
-                <div class=" w-full pt-3/4 bg-cover bg-center bg-no-repeat rounded-2xl relative mb-2" style="background-image: url('images/news/main-new.png')">
+                <div class=" news-item-poster  pt-3/4 mb-2" style="background-image: url('images/news/main-new.png')">
                   <img src="images/icons/heart-white.png" alt="" class=" absolute top-5 right-5 w-5 ">
                 </div>
                 <div >
-                  <p class=" text-sm font-semibold text-pri-col leading-5 line-clamp-2 md:text-lg">
+                  <p class="news-item-title">
                     Making a Housing Wage: Where Teachers,
                     First Responders and Restaurant Workers.Nothing is impossible.
                   </p>
-                  <div class=" mt-2 mb-1 xs:text-sm md:text-lg ">
-                    <a href="social.html"> <span class="  text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-                    <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-                    <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
+                  <div class="cat-author-date  ">
+                    <a href="social.html"> Xã hội</a>
+                    <span ></span>
+                    <span>Vu Van Nghia</span>
+                    <span ></span>
+                    <span >31/08/2022</span>
                   </div>
-                  <div class=" font-normal text-sm text-pri-col leading-5 opacity-50 line-clamp-3 mb-6">
+                  <div class=" news-item-desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sit diam at feugiat purus, interdum porta sed.
                     Ac ut hendrerit envitae...
@@ -131,27 +131,26 @@
                   </div>
                 </div>
               </a>
-            </div>
           </div>
-          <div class="  xs:flex  justify-between md:flex  md:flex-col md:w-2/5 md:pl-5 md:justify-start md:flex-wrap">
+          <div >
             <div class=" xs:w-flex-1/2  md:w-full ">
               <a href="detail.html">
-                <div class=" w-full pt-65 bg-cover bg-center bg-no-repeat rounded-2xl relative mb-2" style="background-image: url('images/news/news-1.png')">
+                <div class=" news-item-poster  pt-65 mb-2" style="background-image: url('images/news/news-1.png')">
                   <img src="images/icons/heart-white.png" alt="" class=" absolute top-5 right-5 w-5">
                 </div>
                 <div >
-                  <p class=" text-sm font-semibold text-pri-col leading-5 line-clamp-2 md:text-lg">
+                  <p class="news-item-title">
                     Making a Housing Wage: Where Teachers,
                     First Responders and Restaurant Workers.Nothing is impossible.
                   </p>
-                  <div class=" mt-2 mb-1 xs:text-sm md:text-lg ">
-                    <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-                    <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-                    <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
+                  <div class="cat-author-date  ">
+                    <a href="social.html"> Xã hội</a>
+                    <span ></span>
+                    <span>Vu Van Nghia</span>
+                    <span ></span>
+                    <span >31/08/2022</span>
                   </div>
-                  <div class=" font-normal text-sm text-pri-col leading-5 opacity-50 line-clamp-3 mb-6 md:hidden ">
+                  <div class=" news-item-desc ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sit diam at feugiat purus, interdum porta sed.
                     Ac ut hendrerit envitae...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -163,22 +162,22 @@
             </div>
             <div class=" xs:w-flex-1/2  md:w-full">
               <a href="detail.html">
-                <div class=" w-full pt-65 bg-cover bg-center bg-no-repeat rounded-2xl relative mb-2" style="background-image: url('images/news/new-2.png')">
+                <div class=" news-item-poster  pt-65  mb-2" style="background-image: url('images/news/new-2.png')">
                   <img src="images/icons/heart-white.png" alt="" class=" absolute top-5 right-5 w-5">
                 </div>
-                <div class="">
-                  <p class=" text-sm font-semibold text-pri-col leading-5  line-clamp-2 md:text-lg">
+                <div >
+                  <p class="news-item-title" >
                     Making a Housing Wage: Where Teachers,
                     First Responders and Restaurant Workers.Nothing is impossible.
                   </p>
-                  <div class=" mt-2 mb-1 xs:text-sm md:text-lg  ">
-                    <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-                    <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-                    <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-                    <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
+                  <div class="cat-author-date  ">
+                    <a href="social.html"> Xã hội</a>
+                    <span ></span>
+                    <span>Vu Van Nghia</span>
+                    <span ></span>
+                    <span >31/08/2022</span>
                   </div>
-                  <div class=" font-normal text-sm text-pri-col leading-5 opacity-50 line-clamp-3 mb-6 md:hidden ">
+                  <div class=" news-item-desc  ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sit diam at feugiat purus, interdum porta sed.
                     Ac ut hendrerit envitae...
@@ -191,145 +190,144 @@
         </div>
 
       </div>
-      <div class=" mb-14 md:mt-10">
-        <div class=" flex justify-between mb-6 ">
-          <p class=" font-semibold text-sm leading-5 text-pri-col">Video</p>
-          <span class=" font-medium text-pri-col xs:hidden "><i class="fas fa-chevron-right"></i></span>
-          <span class=" hidden xs:text-base text-pri-col leading-5 font-normal xs:block ">Xem tat ca</span>
+      <div class="videos  mb-14 md:mt-10">
+        <div class="sub-nav ">
+          <p class="text-sm">Video</p>
+          <span><i class="fas fa-chevron-right"></i></span>
+          <span >Xem tat ca</span>
         </div>
-        <div class=" xs:flex xs:flex-col md:flex-row md:justify-between md:h-96   ">
-          <div class=" mt-2 mb-4 md:w-8/12 md:mt-0 md:pr-5" >
-            <div class=" relative">
+        <div class=" videos-body   ">
+          <div>
+            <div class="outstanding-video relative">
               <div class=" relative ">
                 <img src="images/videos/video.png" alt="" class="">
-                <div class=" text-center h-12 w-12 md:h-24 md:w-24 rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70">
-                  <img src="images/icons/pause.png" alt="" class=" h-5 md:h-10   translate-y-3/4 translate-x-full">
+                <div class=" background-control h-12 w-12 md:h-16 md:w-16 xl:h-24 xl:w-24">
+                  <img src="images/icons/pause.png" alt="" class=" h-5 md:h-7 xl:h-10   translate-y-3/4 translate-x-full">
                 </div>
 
                 <img src="images/icons/heart-white.png" alt="" class=" absolute top-1/20 right-1/20 w-5">
               </div>
-              <div class=" xs:absolute xs:bottom-1/10 xs:left-1/20 xs:text-white">
-                <p class=" text-sm leading-5 font-semibold text-pri-col line-clamp-2 xs:text-white xs:text-lg">
+              <div >
+                <p>
                   Đi dạo cạnh đường cao tốc Pháp Vân Cầu Giẽ ổn không?
                 </p>
-                <p >
-                  <span class=" font-normal text-xs text-pri-col xs:text-white xs:text-base ">5542 lượt xem</span>
-                  <span class="inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4 xs:bg-white"></span>
-                  <span class=" font-normal text-pri-col opacity-50 text-xs leading-5 xs:text-white xs:opacity-50 xs:text-base"> 31/08/2022</span>
+                <p class="viewers" >
+                  <span >5542 lượt xem</span>
+                  <span ></span>
+                  <span > 31/08/2022</span>
 
                 </p>
               </div>
             </div>
           </div>
-          <div class=" flex  justify-between overflow-hidden overflow-scroll md:flex-col md:w-4/12">
-            <div class=" mr-2.5 basis-1/2 shrink-0  xs:basis-1/3 md:basis-1/2">
+          <div class="other-videos ">
+            <div class="other-video-item ">
               <div class=" relative">
                 <img src="images/videos/video.png" alt="" class=" rounded-2xl max-w-full object-cover ">
-                <div class=" text-center h-9 w-9 rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70">
+                <div class=" background-control h-9 w-9">
                   <img src="images/icons/pause.png" alt="" class=" h-5 translate-x-2/3 translate-y-1/2">
                 </div>
                 <img src="images/icons/heart-white.png" alt="" class=" absolute top-1/20 right-1/20 w-5">
               </div>
-              <div class=" ">
-                <p class=" text-sm leading-5 font-semibold text-pri-col line-clamp-2">
+              <div >
+                <p class=" other-video-item-desc">
                   Making a Housing Wage: Where  Restaurant should l...
                 </p>
-                <p >
-                  <span class=" font-normal text-xs text-pri-col">5542 lượt xem</span>
-                  <span class="inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4"></span>
+                <p  class="viewers">
+                  <span >5542 lượt xem</span>
+                  <span></span>
 
-                  <span class=" font-normal text-pri-col opacity-50 text-xs leading-5"> 31/08/2022</span>
+                  <span > 31/08/2022</span>
                 </p>
               </div>
             </div>
-            <div class="  mr-2.5 basis-1/2 shrink-0 xs:basis-1/3 md:basis-1/2">
+            <div class="other-video-item  ">
               <div class=" relative">
                 <img src="images/videos/video.png" alt="" class=" rounded-2xl max-w-full object-cover">
-                <div class=" text-center h-9 w-9 rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70">
+                <div class=" background-control h-9 w-9">
                   <img src="images/icons/pause.png" alt="" class=" h-5 translate-x-2/3 translate-y-1/2">
 
                 </div>
                 <img src="images/icons/heart-white.png" alt="" class=" absolute top-1/20 right-1/20 w-5">
               </div>
               <div class="">
-                <p class=" text-sm leading-5 font-semibold text-pri-col line-clamp-2">
+                <p class=" other-video-item-desc">
                   Making a Housing Wage: Where  Restaurant should l...                </p>
-                <p >
-                  <span class=" font-normal text-xs text-pri-col">5542 luot xem</span>
-                  <span class="inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4"></span>
+                <p class="viewers">
+                  <span >5542 luot xem</span>
+                  <span class=""></span>
 
-                  <span class=" font-normal text-pri-col opacity-50 text-xs leading-5"> 31/08/2022</span>
+                  <span > 31/08/2022</span>
                 </p>
               </div>
             </div>
-            <div class=" mr-2.5 basis-1/2 shrink-0 xs:basis-1/3 md:basis-1/2">
+            <div class="other-video-item ">
               <div class=" relative">
                 <img src="images/videos/img.png" alt="" class=" rounded-2xl max-w-full object-cover">
-                <div class=" text-center h-9 w-9 rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70">
+                <div class=" background-control  h-9 w-9">
                   <img src="images/icons/pause.png" alt="" class=" h-5 translate-x-2/3 translate-y-1/2">
 
                 </div>
                 <img src="images/icons/heart-white.png" alt="" class=" absolute top-1/20 right-1/20 w-5">
               </div>
               <div class="">
-                <p class=" text-sm leading-5 font-semibold text-pri-col line-clamp-2">
+                <p class=" other-video-item-desc">
                   Making a Housing Wage: Where  Restaurant should l...
                 </p>
-                <p >
-                  <span class=" font-normal text-xs text-pri-col">5542 lượt xem</span>
-                  <span class="inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4"></span>
+                <p class="viewers" >
+                  <span >5542 lượt xem</span>
+                  <span class=""></span>
 
-                  <span class=" font-normal text-pri-col opacity-50 text-xs leading-5"> 31/08/2022</span>
+                  <span > 31/08/2022</span>
                 </p>
               </div>
             </div>
-            <div class=" mr-2.5 basis-1/2 shrink-0 xs:basis-1/3 md:basis-1/2">
+            <div class="other-video-item ">
               <div class=" relative">
                 <img src="images/videos/img_1.png" alt="" class=" rounded-2xl max-w-full object-cover">
-                <div class=" text-center h-9 w-9 rounded-full absolute bottom-1/2 left-2/4 translate-y-1/2 -translate-x-1/4 leading-10 bg-white/70">
+                <div class=" background-control h-9 w-9 ">
                   <img src="images/icons/pause.png" alt="" class=" h-5 translate-x-2/3 translate-y-1/2">
                 </div>
                 <img src="images/icons/heart-white.png" alt="" class=" absolute top-1/20 right-1/20 w-5">
               </div>
               <div class="">
-                <p class=" text-sm leading-5 font-semibold text-pri-col line-clamp-2">
+                <p class=" other-video-item-desc">
                   Making a Housing Wage: Where  Restaurant should l...
                 </p>
-                <p >
-                  <span class=" font-normal text-xs text-pri-col">5542 lượt xem</span>
-                  <span class="inline-block w-1 h-1 rounded-full bg-black mx-2 -translate-y-1/4"></span>
+                <p class="viewers">
+                  <span >5542 lượt xem</span>
+                  <span class=""></span>
 
-                  <span class=" font-normal text-pri-col opacity-50 text-xs leading-5"> 31/08/2022</span>
+                  <span > 31/08/2022</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div >
-        <p class=" font-semibold text-lg leading-5 text-pri-col mb-4 md:mb-9 md:mt-14">Danh sách tin</p>
-        <div class=" mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center">
-
-          <div class=" hidden xs:block xs:relative xs:w-2/5 ">
+      <div class="list-news" >
+        <p class="">Danh sách tin</p>
+        <div class="list-news-item ">
+          <div >
             <a href="detail.html">
               <img src="images/posts/img.png" alt="Hinh anh" >
               <img src="images/icons/heart-white.png" alt="" class=" xs:absolute xs:top-5 xs:right-5 xs:w-5">
             </a>
           </div>
-          <div class="xs:w-3/5 pl-5">
+          <div class="xs:w-3/5 xs:pl-5">
             <a href="detail.html">
-              <p class=" text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...</p>
-              <p class=" mb-1">
-                <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-                <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-                <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-                <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-                <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
-              </p>
+              <p class=" list-news-item-title"> <a href="detail.html">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...</a></p>
+              <div class="cat-author-date  ">
+                <a href="social.html"> Xã hội</a>
+                <span ></span>
+                <span>Vu Van Nghia</span>
+                <span ></span>
+                <span >31/08/2022</span>
+              </div>
             </a>
-            <div class=" hidden xs:block">
+            <div class=" list-news-item--visible-xs">
               <a href="detail.html">
-                <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4">
+                <p >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
 
@@ -337,7 +335,7 @@
               </a>
 
             </div>
-            <div class=" flex justify-between items-center xs:hidden">
+            <div class=" list-news-item--visible-mobie">
               <div class=" w-1/2 relative">
                 <a href="detail.html">
                   <img src="images/posts/img.png" alt="Hinh anh"  class="max-w-full object-cover">
@@ -345,9 +343,8 @@
                 </a>
               </div>
 
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full">
+              <p class="">
                 <a href="detail.html">
-
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                 </a>
 
@@ -356,30 +353,29 @@
           </div>
 
         </div>
-        <div class=" mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center">
-
-          <div class=" hidden xs:block xs:relative xs:w-2/5">
+        <div class="list-news-item ">
+          <div>
             <a href="detail.html">
               <img src="images/posts/img_1.png" alt="Hinh anh" >
               <img src="images/icons/heart-white.png" alt="" class="post-icon-fav xs:absolute xs:top-5 xs:right-5 xs:w-5">
             </a>
           </div>
-          <div class="xs:w-3/5 pl-5">
-            <p class=" text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2">
+          <div class="xs:w-3/5 xs:pl-5">
+            <p class="list-news-item-title ">
               <a href="detail.html">
                 Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...
               </a>
             </p>
-            <p class=" mb-1">
-              <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-              <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-              <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
-            </p>
-            <div class=" hidden xs:block">
+            <div class="cat-author-date  ">
+              <a href="social.html"> Xã hội</a>
+              <span ></span>
+              <span>Vu Van Nghia</span>
+              <span ></span>
+              <span >31/08/2022</span>
+            </div>
+            <div class=" list-news-item--visible-xs">
 
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4">
+              <p >
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
@@ -387,14 +383,14 @@
               </p>
 
             </div>
-            <div class=" flex justify-between items-center xs:hidden">
+            <div class=" list-news-item--visible-mobie">
               <div class=" w-1/2 relative">
 
                 <img src="images/posts/img_1.png" alt="Hinh anh"  class="max-w-full object-cover" >
                 <img src="images/icons/heart-white.png" alt="" class=" w-5 absolute bottom-5 left-5 xs:top-5 xs:right-5 xs:w-5">
                 </a>
               </div>
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full">
+              <p class="">
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                 </a>
@@ -403,30 +399,29 @@
           </div>
           </a>
         </div>
-        <div class=" mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center">
-
-          <div class=" hidden xs:block xs:relative xs:w-2/5">
+        <div class="list-news-item ">
+          <div >
             <a href="detail.html">
               <img src="images/posts/img_2.png" alt="Hinh anh" >
               <img src="images/icons/heart-white.png" alt="" class=" xs:absolute xs:top-5 xs:right-5 xs:w-5">
             </a>
           </div>
-          <div class="xs:w-3/5 pl-5">
-            <p class=" text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2">
+          <div class="xs:w-3/5 xs:pl-5">
+            <p class=" list-news-item-title">
               <a href="detail.html">
                 Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...
               </a>
             </p>
-            <p class=" mb-1">
-              <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-              <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-              <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
-            </p>
-            <div class=" hidden xs:block">
+            <div class="cat-author-date  ">
+              <a href="social.html"> Xã hội</a>
+              <span ></span>
+              <span>Vu Van Nghia</span>
+              <span ></span>
+              <span >31/08/2022</span>
+            </div>
+            <div class=" list-news-item--visible-xs">
 
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4">
+              <p >
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
@@ -434,7 +429,7 @@
               </p>
 
             </div>
-            <div class=" flex justify-between items-center xs:hidden">
+            <div class=" list-news-item--visible-mobie">
               <div class=" w-1/2 relative">
                 <a href="detail.html">
                   <img src="images/posts/img_2.png" alt="Hinh anh"   class="max-w-full object-cover">
@@ -442,7 +437,7 @@
                 </a>
 
               </div>
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full">
+              <p class="">
                 <a href="detail">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                 </a>
@@ -451,30 +446,29 @@
           </div>
 
         </div>
-        <div class=" mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center">
-
-          <div class=" hidden xs:block xs:relative xs:w-2/5">
+        <div class="list-news-item ">
+          <div >
             <a href="detail.html">
               <img src="images/posts/img_3.png" alt="Hinh anh" >
               <img src="images/icons/heart-white.png" alt="" class=" xs:absolute xs:top-5 xs:right-5 xs:w-5">
             </a>
           </div>
-          <div class="xs:w-3/5 pl-5">
-            <p class=" text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2">
+          <div class="xs:w-3/5 xs:pl-5">
+            <p class=" list-news-item-title">
               <a href="detail.html">
                 Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...
               </a>
             </p>
-            <p class=" mb-1">
-              <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-              <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-              <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
-            </p>
-            <div class=" hidden xs:block">
+            <div class="cat-author-date  ">
+              <a href="social.html"> Xã hội</a>
+              <span ></span>
+              <span>Vu Van Nghia</span>
+              <span ></span>
+              <span >31/08/2022</span>
+            </div>
+            <div class=" list-news-item--visible-xs">
 
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4 ">
+              <p class="  ">
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
@@ -482,14 +476,14 @@
               </p>
 
             </div>
-            <div class=" flex justify-between items-center xs:hidden">
+            <div class=" list-news-item--visible-mobie">
               <div class=" w-1/2 relative">
                 <a href="detail.html">
                   <img src="images/posts/img_3.png" alt="Hinh anh"  class="max-w-full object-cover" >
                   <img src="images/icons/heart-white.png" alt="" class=" w-5 absolute bottom-5 left-5 xs:top-5 xs:right-5 xs:w-5">
                 </a>
               </div>
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full">
+              <p class="">
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                 </a>
@@ -497,28 +491,28 @@
             </div>
           </div>
         </div>
-        <div class=" mb-4 xs:flex xs:mb-9 xs:justify-between xs:items-center">
-          <div class=" hidden xs:block xs:relative xs:w-2/5">
+        <div class="list-news-item ">
+          <div >
             <a href="detail.html">
               <img src="images/posts/img_3.png" alt="Hinh anh" >
               <img src="images/icons/heart-white.png" alt="" class="post-icon-fav xs:absolute xs:top-5 xs:right-5 xs:w-5">
             </a>
           </div>
-          <div class=" xs:w-3/5 pl-5">
-            <p class=" text-sm font-semibold leading-5 text-pri-col xs:text-lg xs:leading-7 line-clamp-2">
+          <div class=" xs:w-3/5 xs:pl-5">
+            <p class=" list-news-item-title">
               <a href="detail.html">
                 Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers...
               </a></p>
-            <p class=" mb-1">
-              <a href="social.html"> <span class=" text-teal-500	 font-semibold text-sm leading-5 xs:text-base">Xã hội</span></a>
-              <span class="inline-block w-1 h-1 rounded-full ml-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col my-1.5 xs:text-base">Vu Van Nghia</span>
-              <span class="inline-block w-1 h-1 rounded-full mr-2.5 bg-stone-400			 -translate-y-full	"></span>
-              <span class=" font-normal text-xs leading-4 text-pri-col opacity-50">31/08/2022</span>
-            </p>
-            <div class=" hidden xs:block">
+            <div class="cat-author-date  ">
+              <a href="social.html"> Xã hội</a>
+              <span ></span>
+              <span>Vu Van Nghia</span>
+              <span ></span>
+              <span >31/08/2022</span>
+            </div>
+            <div class=" list-news-item--visible-xs">
 
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 line-clamp-4 xs:w-full xs:font-normal xs:text-base xs:leading-7  xs:line-clamp-4">
+              <p >
                 <a href="detail.html">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
@@ -526,19 +520,19 @@
               </p>
 
             </div>
-            <div class=" flex justify-between items-center xs:hidden">
+            <div class=" list-news-item--visible-mobie">
               <div class=" w-1/2 relative">
                 <img src="images/posts/img_3.png" alt="Hinh anh"  class="max-w-full object-cover" >
                 <img src="images/icons/heart-white.png" alt="" class=" w-5 absolute bottom-5 left-5 xs:top-5 xs:right-5 xs:w-5">
               </div>
-              <p class=" w-1/2 text-sm leading-5 text-pri-col opacity-50 xs:w-full">
+              <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat puru...
               </p>
             </div>
           </div>
         </div>
         <div class="text-center">
-          <a href="" class="see-more mr-5 py-2 px-6 inline-block rounded-4xl border border-solid border-slate-500	 text-sm font-semibold text-pri-col">xem thêm</a>
+          <a href="" class="see-more">xem thêm</a>
         </div>
       </div>
     </div>
